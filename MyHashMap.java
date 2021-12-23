@@ -107,10 +107,6 @@ public class MyHashMap<K, V> {
 			head = currentNode.getNext();
 			return;
 		}
-		while (currentNode != null && !(currentNode.getKey().equals(word))) {
-			previousNode = currentNode;
-			currentNode = currentNode.getNext();
-		}
 		if (currentNode != null) {
 			previousNode.next = currentNode.next;
 		}
